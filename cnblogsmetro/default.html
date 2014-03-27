@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>cnblogs</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- cnblogs references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/utilities.js"></script>
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div id="homeHost" class="contentHost"></div>
+    <div id="detailHost" class="contentHost hidden"></div>
+
+    <div class="extendedSplashScreen">
+        <img id="extendedSplashScreenImage" src="images/splashscreen.png" />
+        <div id="extendedSplashLoading">
+            <progress class="win-large"></progress>
+        </div>
+    </div>
+
+    <div id="errorMessage" class="hidden">
+    </div>
+
+    <div id="flyoutInfo" data-win-control="WinJS.UI.Flyout">
+        <label style="font-size: 14pt;" id="tip"></label>
+    </div>
+
+    <progress id="topProgress" class="win-large hidden"></progress>
+
+    <div id="bodyProgress" class="hidden">
+        <progress class="win-ring"></progress>
+        <label>
+            正在加载..
+        </label>
+    </div>
+
+    <div id="navigationBar" class="appbar" data-win-control="WinJS.UI.AppBar" data-win-options="{layout:'custom', placement:'top'}">
+        <button data-category='homeblog' class="category-button">
+            首页博客
+        </button>
+        <button data-category='news' class="category-button">
+            新闻
+        </button>
+        <button data-category='hours48blog' class="category-button">
+            48小时阅读排行
+        </button>
+        <button data-category='days10blog' class="category-button">
+            10天内推荐排行
+        </button>
+        <button data-category='hotnews' class="category-button">
+            热门新闻
+        </button>
+        <button data-category='recommendnews' class="category-button">
+            推荐新闻
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>cnblogs</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- cnblogs references -->
+    <link href="home.css" rel="stylesheet" />
+    <script src="/js/dataProvider.js"></script>
+    <script src="/js/incrementalDataSource.js"></script>
+    <script src="home.js"></script>
+</head>
+<body>
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner">
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="titleWrapper">
+                    <span id="category">首页博客</span>
+                    <span class="win-type-x-large chevron">&#xE098;</span>
+                </span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+            <div id="listviewContainer"></div>
+        </section>
+    </div>
+</body>
+</html>

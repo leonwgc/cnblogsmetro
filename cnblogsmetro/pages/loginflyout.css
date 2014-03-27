@@ -1,0 +1,40 @@
+﻿.loginflyout section[role=main] {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.win-content label {
+    font-size: 14pt;
+}
+
+.win-content input[type='text'], input[type='password'] {
+    width: 240px;
+    padding-left: 1px;
+    height: 26px;
+    font-size: 12pt;
+    padding-right: 2px;
+}
+
+.win-content #error {
+    color: red;
+    font-size: 11pt;
+}
+
+.win-content #ok {
+    color: green;
+    font-size: 16pt;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .loginflyout section[role=main] {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .loginflyout section[role=main] {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}

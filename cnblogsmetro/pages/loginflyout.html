@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>loginflyout</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="loginflyout.css" rel="stylesheet" />
+    <script src="loginflyout.js"></script>
+</head>
+<body>
+    <div data-win-control="WinJS.UI.SettingsFlyout" aria-label="Help settings flyout" data-win-options="{settingsCommandId:'loginflyout',width:'narrow'}">
+        <!-- Use either 'win-ui-light' or 'win-ui-dark' depending on the contrast between the header title and background color -->
+        <div class="win-ui-dark win-header" style="background-color: #0154a0;">
+            <!-- Background color reflects app's personality -->
+            <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+            <div class="win-label">登录</div>
+            <img src="../images/storelogo.png" style="position: absolute; right: 40px;" />
+        </div>
+        <div class="win-content ">
+            <div class="win-settings-section">
+                <label for="userName">
+                    用户名<br />
+                    <input id="userName" required placeholder="用户名" type="text" />
+                </label>
+                <label for="userPwd" style="margin-top: -15px;">
+                    密码<br />
+                    <input id="userPwd" required placeholder="密码" type="password" />
+                </label>
+
+                <span>
+                    <button id="loginbutton" class="button01">登 录</button>
+                    <progress style="position: relative; top: 10px;" id="loginring" class="win-ring win-medium hidden"></progress>
+                </span>
+                <label id="error"></label>
+            </div>
+            <label id="ok"></label>
+
+        </div>
+    </div>
+
+</body>
+</html>

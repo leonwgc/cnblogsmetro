@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="45793LeonWang..cnblogs" Version="1.0.0.5" Publisher="CN=E607E0D1-EB73-4B5F-A350-77967B8EF518" />
+  <Properties>
+    <DisplayName>博客园cnblogs</DisplayName>
+    <PublisherDisplayName>LeonWang</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="博客园cnblogs" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="博客园cnblogs" ForegroundText="light" BackgroundColor="#0154a0">
+        <DefaultTile ShowName="wideLogoOnly" WideLogo="images\widelogo.png" ShortName="博客园cnblogs" />
+        <SplashScreen Image="images\splashscreen.png" BackgroundColor="#0154a0" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

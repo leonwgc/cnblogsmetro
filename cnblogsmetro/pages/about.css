@@ -1,0 +1,27 @@
+﻿.about section[role=main] {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.about {
+    color: #0154a0;
+    font-size: 12pt;
+}
+
+    .about div {
+       margin-bottom:15px;
+    }
+
+@media screen and (-ms-view-state: snapped) {
+    .about section[role=main] {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .about section[role=main] {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}

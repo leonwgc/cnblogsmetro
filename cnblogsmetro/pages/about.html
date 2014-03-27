@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>about</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="about.css" rel="stylesheet" />
+    <script src="about.js"></script>
+</head>
+<body>
+    <div data-win-control="WinJS.UI.SettingsFlyout" aria-label="Help settings flyout" data-win-options="{settingsCommandId:'aboutflyout',width:'narrow'}">
+        <!-- Use either 'win-ui-light' or 'win-ui-dark' depending on the contrast between the header title and background color -->
+        <div class="win-ui-dark win-header" style="background-color: #0154a0;">
+            <!-- Background color reflects app's personality -->
+            <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+            <div class="win-label">关于</div>
+            <img src="../images/storelogo.png" style="position: absolute; right: 40px;" />
+        </div>
+        <div class="win-content ">
+            <div class="about">
+                <div style="font-size: 18pt;">博客园cnblogs </div>
+                <div>作者:LeonWang</div>
+                <div><a href="http://www.cnblogs.com/leonwang/" target="_blank">http://www.cnblogs.com/leonwang/</a> </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

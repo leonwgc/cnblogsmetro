@@ -1,0 +1,187 @@
+﻿#loading {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    left: 94%;
+    top: 0;
+}
+
+#categoryMenu button {
+    font-size: 20pt;
+}
+
+#loadmore {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+
+#extendedSplashScreen {
+    background-color: #0154a0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    z-index: 100;
+}
+
+.hidden {
+    display: none;
+}
+
+#extendedSplashScreenImage {
+    position: absolute;
+}
+
+#extendedSplashLoading {
+    position: absolute;
+    width: 100%;
+    top: calc(100% - 200px);
+}
+
+.fragment {
+    /* Define a grid with rows for a banner and a body */
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 128px 1fr;
+    display: -ms-grid;
+    height: 100%;
+    width: 100%;
+}
+
+    .fragment header[role=banner] {
+        /* Define a grid with columns for the back button and page title. */
+        -ms-grid-columns: 39px 81px 1fr;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+    }
+
+        .fragment header[role=banner] .win-backbutton {
+            -ms-grid-column: 2;
+            margin-top: 59px;
+        }
+
+        .fragment header[role=banner] .titlearea {
+            -ms-grid-column: 3;
+            margin-top: 37px;
+            float: left;
+        }
+
+
+    .fragment section[role=main] {
+        -ms-grid-row: 2;
+        height: 100%;
+        width: 100%;
+    }
+
+.titlearea .chevron {
+    vertical-align: 10px;
+}
+
+#listviewContainer {
+    width: calc(100%);
+    height: 100%;
+}
+
+    #listviewContainer .win-surface {
+        margin-left: 120px;
+    }
+
+    #listviewContainer .win-container {
+        margin-right: 20px;
+    }
+
+.templateContainer {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 98px 1fr 30px;
+    width: 390px;
+    height: 290px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+    .templateContainer .topsection {
+        display: -ms-grid;
+        -ms-grid-columns: 98px 1fr;
+        -ms-grid-rows: 1fr;
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+    }
+
+.topsection .templateImg {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    height: 72px;
+    width: 72px;
+}
+
+.topsection .ttitle {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    /*padding-top: 2px;*/
+    padding-left: 6px;
+    /*overflow: scroll;*/
+    text-indent: 4px;
+    display: block;
+    font-size: 16pt;
+    /*color: rgba(0,0,0,0.9);*/
+    color: #0154a0;
+    font-weight: bold;
+}
+
+.templateContainer .tsummary {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    text-indent: 20px;
+    overflow: scroll;
+    color: rgba(0,0,0,0.8);
+}
+
+.templateContainer .tpost {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+    text-align: right;
+    color: rgba(0,0,0,0.5);
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .fragment header[role=banner] {
+        -ms-grid-columns: auto 1fr;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+        .fragment header[role=banner] .win-backbutton {
+            -ms-grid-column: 1;
+            margin-bottom: 0;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 76px;
+        }
+
+            .fragment header[role=banner] .win-backbutton:disabled {
+                display: none;
+            }
+
+        .fragment header[role=banner] .titlearea {
+            -ms-grid-column: 2;
+            margin-bottom: 0;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 68px;
+        }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .fragment header[role=banner] {
+        -ms-grid-columns: 29px 71px 1fr;
+    }
+}
